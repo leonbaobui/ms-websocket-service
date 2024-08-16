@@ -1,0 +1,1 @@
+ms-websocket-service: Websocket microservice to keep connection.
