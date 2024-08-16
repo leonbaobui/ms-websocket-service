@@ -13,6 +13,9 @@ java {
 
 repositories {
 	mavenCentral()
+	maven {
+		url = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
+	}
 }
 
 dependencies {
@@ -30,7 +33,8 @@ dependencies {
 
 	implementation 'io.micrometer:micrometer-registry-prometheus:1.12.2'
 
-	implementation project(':lib')
+	implementation 'org.springframework.boot:spring-boot-starter-actuator:3.2.1'
+	implementation 'io.github.leonbaobui:common-lib:0.0.6-SNAPSHOT'
 
 
 	compileOnly 'org.projectlombok:lombok'
